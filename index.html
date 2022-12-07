@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wanna?</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btns {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Wanna Go out with me!</h1>
+        <div class="btns">
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+    <script>
+        let no = document.getElementById('no');
+        no.addEventListener('mouseover', function () {
+            changePosition();
+        });
+        function changePosition() {
+            // no.style.position = relative;
+            // no.style.top = 
+            let top = (Math.random()*10).toFixed(0);
+            let left = (Math.random()*10).toFixed(0);
+            console.log(top);
+            no.style.position = "relative";
+            no.style.top = top+"rem";
+            no.style.left = left+"rem";
+            
+        }
+    </script>
+</body>
+</html>
